@@ -5,12 +5,16 @@ V_L1_L2 6/i
 V_L2_L3 8/i
 V_L3_L1 10/i
 A_L1 12/i
+A_L2 14/i
 A_L3 16/i
 W_L1 18/i
+W_L2 20/i
 W_L3 22/i
 VA_L1 24/i
+VA_L2 26/i
 VA_L3 28/i
 var_L1 30/i
+var_L2 32/i
 var_L3 34/i
 V_L_N_sys 36/i
 V_L_L_sys 38/i
