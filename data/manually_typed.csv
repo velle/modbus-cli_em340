@@ -1,0 +1,24 @@
+modicon;hexaddr;length;name;datatype;comment
+300001;0000h;2;V L1-N;INT32;Value weight: Volt*10
+300003;0002h;2;V L2-N;INT32;
+300005;0004h;2;V L3-N;INT32;
+300007;0006h;2;V L1-L2;INT32;
+300009;0008h;2;V L2-L3;INT32;
+300011;000Ah;2;V L3-L1;INT32;
+300013;000Ch;2;A L1;INT32;Value weight: Ampere*1000300015 000Eh 2 A L2 INT32;
+300017;0010h;2;A L3;INT32;
+300019;0012h;2;W L1;INT32;Value weight: Watt*10300021 0014h 2 W L2 INT32;
+300023;0016h;2;W L3;INT32;
+300025;0018h;2;VA L1;INT32;Value weight: VA*10300027 001Ah 2 VA L2 INT32;
+300029;001Ch;2;VA L3;INT32;
+300031;001Eh;2;var L1;INT32;Value weight: var*10300033 0020h 2 var L2 INT32;
+300035;0022h;2;var L3;INT32;
+300037;0024h;2;V L-N sys;INT32;Value weight: Volt*10
+300039;0026h;2;V L-L sys;INT32;
+300041;0028h;2;W sys;INT32;Value weight: Watt*10
+300043;002Ah;2;VA sys;INT32;Value weight: VA*10
+300045;002Ch;2;var sys;INT32;Value weight: var*10
+300047;002Eh;1;PF L1;INT16;Negative values correspond to exported active power, positive values correspond to imported active power. Value weight: PF*1000
+300048;002Fh;1;PF L2;INT16;
+300049;0030h;1;PF L3;INT16;
+300050;0031h;1;PF sys;INT16;
