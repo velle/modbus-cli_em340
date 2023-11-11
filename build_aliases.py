@@ -5,9 +5,14 @@ import csv
 DATA_FORMATS = {
     'INT16':'h',
     'INT32':'i',
+    'UINT16':'H',
+    'UINT32':'I',
 }
 
 def to_alias(s):
+    s = s.replace('(+)','PLUS')
+    s = s.replace('(-)','MINUS')
+
     s = s.replace(' ','_')
     s = s.replace('-','_')
     return s

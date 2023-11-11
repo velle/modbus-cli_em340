@@ -26,3 +26,21 @@ modicon;hexaddr;length;name;datatype;comment
 300048;002Fh;1;PF L2;INT16;
 300049;0030h;1;PF L3;INT16;
 300050;0031h;1;PF sys;INT16;
+
+300051;0032h;1;Phase sequence;INT16;The value “1” corresponds to L1-L3-L2 sequence, the value 0 corresponds to L1-L2-L3 sequence. The phase sequence value is meaningful only in a 3-phase system
+300052;0033h;1;Hz;INT16;Value weight: Hz*10
+300053;0034h;2;kWh (+) TOT;INT32;Value weight: kWh*10
+300055;0036h;2;Kvarh (+) TOT;INT32;Value weight: kvarh*10
+300057;0038h;2;kW dmd;INT32;Value weight: Watt*10
+300059;003Ah;2;kW dmd peak;INT32;Value weight: Watt*10
+300061;003Ch;2;kWh (+) PARTIAL;INT32;Value weight: kWh*10
+300063;003Eh;2;Kvarh (+) PARTIAL;INT32;Value weight: kvarh*10
+300065;0040h;2;kWh (+) L1;INT32;Value weight: kWh*10
+300067;0042h;2;kWh (+) L2;INT32;Value weight: kWh*10
+300069;0044h;2;kWh (+) L3;INT32;Value weight: kWh*10
+300071;0046h;2;kWh (+) t1;INT32;Value weight: kWh*10
+300073;0048h;2;kWh (+) t2;INT32;Value weight: kWh*10
+
+300771;0302h;1;Version code;UINT16;Value=0: Version “A”, =1: Version “B”, etc.
+300772;0303h;1;Revision code;UINT16;Value=0: Revision “0” etc.
+300012;000Bh;1;Carlo Gavazzi Controls identification code;INT16; See table 2.8-2
